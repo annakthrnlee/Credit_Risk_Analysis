@@ -24,10 +24,13 @@ First, let's review what exactly we're looking at in each model.
 <img width="808" alt="Screen Shot 2022-09-02 at 11 03 30 AM" src="https://user-images.githubusercontent.com/104043438/188203357-75d55a39-3c7b-4307-b8bb-a04e9e1596d2.png">
 
 - Balanced accuracy score was = 0.6314677834584286 or 0.63 
-- Precision: After reviewing the confusion matrix (which is the table of true positives, false positives, true negatives, and false negatives), let's break it down: I created this chart for simplicity reasons.
-- The high_risk precision score is 0.01 (1%) with a 0.58 (58%) sensitivity score. On the contrary, low_risk precision has a score of 1.00 (100%) with a sensitivity score of 0.81 (81%). 
+- Precision matrix:
+  - True positives: 50
+  - False positives: 5337
+  - Sensitivity/recall of this model: 50 / (50 + 37) = 0.58
+  - Precision of this model: 50 / (50 + 5337) = 0.0093
 
-This chart is the precision matrix but for this model, I wrote it out in a simpler format for my readers to understand what I'm referring to moving forward.
+This chart represents the models precision matrix, I wrote it out in a simpler format for my readers to understand what I'm referring to moving forward.
 
 <img width="694" alt="Screen Shot 2022-09-02 at 11 20 55 AM" src="https://user-images.githubusercontent.com/104043438/188205892-75e36e5e-069f-483a-a328-7120eccc6bd9.png">
 
@@ -37,27 +40,51 @@ This chart is the precision matrix but for this model, I wrote it out in a simpl
 <img width="805" alt="Screen Shot 2022-09-02 at 11 38 41 PM" src="https://user-images.githubusercontent.com/104043438/188257481-eb3283c8-e213-4125-b51b-262ab0a74d4c.png">
 
 - Balanced accuracy score was = .6268316069795457 or 0.63
-- The high_risk precision score is 0.01 (1%) with a 0.61 (61%) sensitivity score. Low_risk precision has a score of 1.00 (100%) with a sensitivity score of 0.68 (68%), remember that was referring to our f1 score. 
-- One thing to note: High precision is usually the result of a conservative process, so that predicted positives are likely true positives, but several other true positives may not be predicted.
-
+- Precision matrix:
+  - True positives: 53
+  - False positives: 6086
+  - Sensitivity/recall of this model: 53 / (53 + 34) = 0.61
+  - Precision of this model: 53 / (53 + 6086) = 0.0086
+  
 ### Undersampling
+<img width="819" alt="Screen Shot 2022-09-03 at 3 06 31 PM" src="https://user-images.githubusercontent.com/104043438/188287672-ac17ad7f-b2ef-47ab-bc81-823e4d4b1feb.png">
+
 - Balanced accuracy score was = 0.5126747001543042 or 0.51
-- For this model I'll provide a deeper explanation for the precision matrix:
+- Precision matrix: 
   - True positives: 50
   - False positives: 9404
-  - Thus, 50 + 37 = 87 show credit risk
-  - The machine showed that 9454 accounts had credit risk. As you can see, this model flagged way too many risks, only few were found to be                     accurate. 
-<img width="808" alt="Screen Shot 2022-09-03 at 12 02 01 AM" src="https://user-images.githubusercontent.com/104043438/188258092-44e6b736-4fc1-4a85-b89f-06a6bbe5e011.png">
+  - Sensitivity/recall of this model: 50 / (50 + 37) = 0.58
+  - Precision of this model: 50 / (50 + 9404) = 0.0053
 
 ### Combination (Over & Under) Sampling
 <img width="445" alt="Screen Shot 2022-09-03 at 12 02 19 AM" src="https://user-images.githubusercontent.com/104043438/188258102-671df80b-84c8-4125-8042-05892476b499.png">
 <img width="398" alt="Screen Shot 2022-09-03 at 12 02 30 AM" src="https://user-images.githubusercontent.com/104043438/188258105-39c35491-f381-4c53-b379-065eb9641fdc.png">
 <img width="801" alt="Screen Shot 2022-09-03 at 12 02 39 AM" src="https://user-images.githubusercontent.com/104043438/188258110-7ff36aab-9e41-4a2b-a45e-2a682a87da62.png">
-
 - Balanced accuracy score was = 0.6413505042081133 or 0.64
-- The high_risk precision is 0.01 (1%) with a 0.70 (70%) sensitivity score. Low_risk precision has a score of 1.00 (100%) with a sensitivity score of 0.58 (58%). 
-
+- Precision matrix: 
+  - True positives: 61
+  - False positives: 7163
+  - Sensitivity/recall of this model: 61 / (61 + 26) = 0.7
+  - Precision of this model: 61 / (61 + 7163) = 0.0084
+  
 #### Ensemble Learners: Balanced Random Forest Classifier
-
+<img width="596" alt="Screen Shot 2022-09-03 at 3 10 46 PM" src="https://user-images.githubusercontent.com/104043438/188287750-8069d42b-d38d-47aa-a3ad-dbe70e55980f.png">
+<img width="851" alt="Screen Shot 2022-09-03 at 3 10 58 PM" src="https://user-images.githubusercontent.com/104043438/188287755-9f1d1808-695a-476f-8275-6131043a70b7.png">
+- Balanced accuracy score was = 0.795829959187949 or 0.80
+- Precision matrix: 
+  - True positives: 62
+  - False positives: 2071
+  - Sensitivity/recall of this model: 62 / (62 + 25) = 0.71
+  - Precision of this model: 61 / (61 + 2071) = 0.029
 
 #### Easy Ensemble AdaBoost Classifier 
+<img width="525" alt="Screen Shot 2022-09-03 at 3 12 43 PM" src="https://user-images.githubusercontent.com/104043438/188287801-60f85ed7-7f0c-4de7-abd8-8b94da26c834.png">
+<img width="808" alt="Screen Shot 2022-09-03 at 3 12 52 PM" src="https://user-images.githubusercontent.com/104043438/188287806-7ebc34af-66b5-4bde-9202-5f4d5d9923c5.png">
+- Balanced accuracy score was = 0.9263912558266958 or 0.93
+- Precision matrix: 
+  - True positives: 79
+  - False positives: 946
+  - Sensitivity/recall of this model: 79 / (79 + 8) = 0.91
+  - Precision of this model: 79 / (79 + 946) = 0.077
+
+## Results: 

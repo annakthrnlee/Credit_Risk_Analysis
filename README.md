@@ -26,6 +26,8 @@ First, let's review what exactly we're looking at in each model.
 - Balanced accuracy score was = 0.6314677834584286 or 0.63 
 - Precision: After reviewing the confusion matrix (which is the table of true positives, false positives, true negatives, and false negatives), let's break it down: I created this chart for simplicity reasons.
 - The high_risk precision score is 0.01 (1%) with a 0.58 (58%) sensitivity score. On the contrary, low_risk precision has a score of 1.00 (100%) with a sensitivity score of 0.81 (81%). 
+
+This chart is the precision matrix but for this model, I wrote it out in a simpler format for my readers to understand what I'm referring to moving forward.
 <img width="694" alt="Screen Shot 2022-09-02 at 11 20 55 AM" src="https://user-images.githubusercontent.com/104043438/188205892-75e36e5e-069f-483a-a328-7120eccc6bd9.png">
 
 #### SMOTE Oversampling
@@ -34,8 +36,8 @@ First, let's review what exactly we're looking at in each model.
 <img width="805" alt="Screen Shot 2022-09-02 at 11 38 41 PM" src="https://user-images.githubusercontent.com/104043438/188257481-eb3283c8-e213-4125-b51b-262ab0a74d4c.png">
 
 - Balanced accuracy score was = .6268316069795457 or 0.63
-- The high_risk precision score is 0.01 (1%) with a 0.61 (61%) sensitivity score. Low_risk precision has a score of 1.00 (100%) with a sensitivity score of 0.78 (78%), remember that were reffering to our f1 score. 
-- One thing to note: High precision is usually the result of a conservative process, so that predicted positives are likely true positives; but a number of other true positives may not be predicted.
+- The high_risk precision score is 0.01 (1%) with a 0.61 (61%) sensitivity score. Low_risk precision has a score of 1.00 (100%) with a sensitivity score of 0.78 (78%), remember that was referring to our f1 score. 
+- One thing to note: High precision is usually the result of a conservative process, so that predicted positives are likely true positives, but several other true positives may not be predicted.
 
 #### Undersampling
 

@@ -43,10 +43,10 @@ This chart is the precision matrix but for this model, I wrote it out in a simpl
 ### Undersampling
 - Balanced accuracy score was = 0.5126747001543042 or 0.51
 - For this model i'll give a deeper explanation for the precision matrix:
-            - True positives: 50
-            - False positives: 9404
-            - Thus, 50 + 37 = 87 show credit risk
-            - The machine showed that 9454 accounts had credit risk. As you can see, this model flagged way too many risks, only few were found to be                     accurate. 
+  - True positives: 50
+  - False positives: 9404
+  - Thus, 50 + 37 = 87 show credit risk
+  - The machine showed that 9454 accounts had credit risk. As you can see, this model flagged way too many risks, only few were found to be                     accurate. 
 
 #### Combination (Over & Under) Sampling
 

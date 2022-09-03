@@ -11,7 +11,7 @@ Credit risk is an inherently unbalanced classification problem, as good loans ea
 - Data (CSV) source: LoanStats_2019Q1.csv.zip
 - Software: Python 3.9.7 and Jupyter Notebook (double chcek versions)
 
-## Results: balanced accuracy scores and the precision and recall scores of all six machine learning models. 
+## Results: 
 First, let's review what exactly we're looking at in each model.
 - Balanced accuracy score: Is a machine learning error metric for binary and multi-class classification models.
 - Precision: Also known as positive predictive value (PPV), is a measure of how reliable a positive classification. Precision is obtained by dividing the number of true positives (TP) by the number of all positives (i.e., the sum of true positives and false positives, or TP + FP). Precision = TP/(TP + FP).

@@ -19,7 +19,7 @@ First, let's review what exactly we're looking at in each model.
 - F1 Score: Also called the harmonic mean, can be characterized as a single summary statistic of precision and sensitivity. F1 score = 2(Precision * Sensitivity)/(Precision + Sensitivity).
 
 ### Balance accuracy scores: 
-###### Now, let's review the scores of the oversampling (naive random oversampling) machine learning model. 
+**Oversampling (naive random oversampling) machine learning model. 
 
 <img width="546" alt="Screen Shot 2022-09-02 at 11 02 48 AM" src="https://user-images.githubusercontent.com/104043438/188203263-77922411-f0a4-4348-b6c6-b9854d8a2470.png">
 <img width="498" alt="Screen Shot 2022-09-02 at 11 03 18 AM" src="https://user-images.githubusercontent.com/104043438/188203324-d49f5fa4-70be-46cc-a178-acb3d39144e7.png">

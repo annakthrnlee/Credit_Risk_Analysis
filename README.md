@@ -60,6 +60,7 @@ This chart represents the models precision matrix, I wrote it out in a simpler f
 <img width="445" alt="Screen Shot 2022-09-03 at 12 02 19 AM" src="https://user-images.githubusercontent.com/104043438/188258102-671df80b-84c8-4125-8042-05892476b499.png">
 <img width="398" alt="Screen Shot 2022-09-03 at 12 02 30 AM" src="https://user-images.githubusercontent.com/104043438/188258105-39c35491-f381-4c53-b379-065eb9641fdc.png">
 <img width="801" alt="Screen Shot 2022-09-03 at 12 02 39 AM" src="https://user-images.githubusercontent.com/104043438/188258110-7ff36aab-9e41-4a2b-a45e-2a682a87da62.png">
+
 - Balanced accuracy score was = 0.6413505042081133 or 0.64
 - Precision matrix: 
   - True positives: 61
@@ -70,6 +71,7 @@ This chart represents the models precision matrix, I wrote it out in a simpler f
 #### Ensemble Learners: Balanced Random Forest Classifier
 <img width="596" alt="Screen Shot 2022-09-03 at 3 10 46 PM" src="https://user-images.githubusercontent.com/104043438/188287750-8069d42b-d38d-47aa-a3ad-dbe70e55980f.png">
 <img width="851" alt="Screen Shot 2022-09-03 at 3 10 58 PM" src="https://user-images.githubusercontent.com/104043438/188287755-9f1d1808-695a-476f-8275-6131043a70b7.png">
+
 - Balanced accuracy score was = 0.795829959187949 or 0.80
 - Precision matrix: 
   - True positives: 62
@@ -80,6 +82,7 @@ This chart represents the models precision matrix, I wrote it out in a simpler f
 #### Easy Ensemble AdaBoost Classifier 
 <img width="525" alt="Screen Shot 2022-09-03 at 3 12 43 PM" src="https://user-images.githubusercontent.com/104043438/188287801-60f85ed7-7f0c-4de7-abd8-8b94da26c834.png">
 <img width="808" alt="Screen Shot 2022-09-03 at 3 12 52 PM" src="https://user-images.githubusercontent.com/104043438/188287806-7ebc34af-66b5-4bde-9202-5f4d5d9923c5.png">
+
 - Balanced accuracy score was = 0.9263912558266958 or 0.93
 - Precision matrix: 
   - True positives: 79

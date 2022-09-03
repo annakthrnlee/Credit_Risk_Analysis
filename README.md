@@ -89,5 +89,7 @@ This chart represents the models precision matrix, I wrote it out in a simpler f
   - False positives: 946
   - Sensitivity/recall of this model: 79 / (79 + 8) = 0.91
   - Precision of this model: 79 / (79 + 946) = 0.077
-abac
-## Results: 
+
+## Summary: 
+After using the credit card credit dataset from LendingClub, sampling all the data using different algorithms, and comparing two new machine learning models that reduce bias, It's time to address my findings. In this segment, I will evaluate the performances of said models and address whether they should be used to predict credit risk. 
+For each model, though they do vary slightly, the sensitivity is very high, while the precision is very low. This is why I clarified the F1 score for each model. F1 scores range from 0 to 9, 0 being the lowest and 9 being the highest. Once we review each model, the lowest (0.58 for the Undersampling model can be considered the worst out of all six. The highest F1 score achieved was in the Easy Ensemble AdaBoost Classifier (0.91), thus this model would be the best option to predict credit risk considering its accuracy.  

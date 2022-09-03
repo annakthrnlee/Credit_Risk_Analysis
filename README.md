@@ -37,19 +37,25 @@ This chart is the precision matrix but for this model, I wrote it out in a simpl
 <img width="805" alt="Screen Shot 2022-09-02 at 11 38 41 PM" src="https://user-images.githubusercontent.com/104043438/188257481-eb3283c8-e213-4125-b51b-262ab0a74d4c.png">
 
 - Balanced accuracy score was = .6268316069795457 or 0.63
-- The high_risk precision score is 0.01 (1%) with a 0.61 (61%) sensitivity score. Low_risk precision has a score of 1.00 (100%) with a sensitivity score of 0.78 (78%), remember that was referring to our f1 score. 
+- The high_risk precision score is 0.01 (1%) with a 0.61 (61%) sensitivity score. Low_risk precision has a score of 1.00 (100%) with a sensitivity score of 0.68 (68%), remember that was referring to our f1 score. 
 - One thing to note: High precision is usually the result of a conservative process, so that predicted positives are likely true positives, but several other true positives may not be predicted.
 
 ### Undersampling
 - Balanced accuracy score was = 0.5126747001543042 or 0.51
-- For this model i'll give a deeper explanation for the precision matrix:
+- For this model I'll provide a deeper explanation for the precision matrix:
   - True positives: 50
   - False positives: 9404
   - Thus, 50 + 37 = 87 show credit risk
   - The machine showed that 9454 accounts had credit risk. As you can see, this model flagged way too many risks, only few were found to be                     accurate. 
+<img width="808" alt="Screen Shot 2022-09-03 at 12 02 01 AM" src="https://user-images.githubusercontent.com/104043438/188258092-44e6b736-4fc1-4a85-b89f-06a6bbe5e011.png">
 
-#### Combination (Over & Under) Sampling
+### Combination (Over & Under) Sampling
+<img width="445" alt="Screen Shot 2022-09-03 at 12 02 19 AM" src="https://user-images.githubusercontent.com/104043438/188258102-671df80b-84c8-4125-8042-05892476b499.png">
+<img width="398" alt="Screen Shot 2022-09-03 at 12 02 30 AM" src="https://user-images.githubusercontent.com/104043438/188258105-39c35491-f381-4c53-b379-065eb9641fdc.png">
+<img width="801" alt="Screen Shot 2022-09-03 at 12 02 39 AM" src="https://user-images.githubusercontent.com/104043438/188258110-7ff36aab-9e41-4a2b-a45e-2a682a87da62.png">
 
+- Balanced accuracy score was = 0.6413505042081133 or 0.64
+- The high_risk precision is 0.01 (1%) with a 0.70 (70%) sensitivity score. Low_risk precision has a score of 1.00 (100%) with a sensitivity score of 0.58 (58%). 
 
 #### Ensemble Learners: Balanced Random Forest Classifier
 

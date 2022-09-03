@@ -25,7 +25,6 @@ First, let's review what exactly we're looking at in each model.
 <img width="498" alt="Screen Shot 2022-09-02 at 11 03 18 AM" src="https://user-images.githubusercontent.com/104043438/188203324-d49f5fa4-70be-46cc-a178-acb3d39144e7.png">
 <img width="808" alt="Screen Shot 2022-09-02 at 11 03 30 AM" src="https://user-images.githubusercontent.com/104043438/188203357-75d55a39-3c7b-4307-b8bb-a04e9e1596d2.png">
 
-For this model: 
 - Balanced accuracy score was = 0.6314677834584286 or 0.63 
 - Precision: After reviewing the confusion matrix (which is the table of true positives, false positives, true negatives, and false negatives), let's break it down: I created this chart for simplicity reasons.
 - The high_risk precision score is 0.01 (1%) with a 0.58 (58%) sensitivity score. On the contrary, low_risk precision has a score of 1.00 (100%) with a sensitivity score of 0.81 (81%). 

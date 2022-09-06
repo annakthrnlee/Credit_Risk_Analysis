@@ -68,7 +68,7 @@ This chart represents the models precision matrix, I wrote it out in a simpler f
   - Sensitivity/recall of this model: 61 / (61 + 26) = 0.7
   - Precision of this model: 61 / (61 + 7163) = 0.0084
   
-#### Ensemble Learners: Balanced Random Forest Classifier
+### Ensemble Learners: Balanced Random Forest Classifier
 <img width="596" alt="Screen Shot 2022-09-03 at 3 10 46 PM" src="https://user-images.githubusercontent.com/104043438/188287750-8069d42b-d38d-47aa-a3ad-dbe70e55980f.png">
 <img width="851" alt="Screen Shot 2022-09-03 at 3 10 58 PM" src="https://user-images.githubusercontent.com/104043438/188287755-9f1d1808-695a-476f-8275-6131043a70b7.png">
 
@@ -79,7 +79,7 @@ This chart represents the models precision matrix, I wrote it out in a simpler f
   - Sensitivity/recall of this model: 62 / (62 + 25) = 0.71
   - Precision of this model: 61 / (61 + 2071) = 0.029
 
-#### Easy Ensemble AdaBoost Classifier 
+### Easy Ensemble AdaBoost Classifier 
 <img width="525" alt="Screen Shot 2022-09-03 at 3 12 43 PM" src="https://user-images.githubusercontent.com/104043438/188287801-60f85ed7-7f0c-4de7-abd8-8b94da26c834.png">
 <img width="808" alt="Screen Shot 2022-09-03 at 3 12 52 PM" src="https://user-images.githubusercontent.com/104043438/188287806-7ebc34af-66b5-4bde-9202-5f4d5d9923c5.png">
 

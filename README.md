@@ -9,7 +9,7 @@ Credit risk is an inherently unbalanced classification problem, as good loans ea
 
 ## Resources:
 - Data (CSV) source: LoanStats_2019Q1.csv.zip
-- Software: Python 3.9.7 and Jupyter Notebook (double chcek versions)
+- Software: Python 3.9.7 and Jupyter Notebook
 
 ## Results: 
 First, let's review what exactly we're looking at in each model.
